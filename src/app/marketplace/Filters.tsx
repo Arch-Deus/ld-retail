@@ -85,8 +85,8 @@ const Filters = ({keyword}: filterProp) => {
                                     <option value="name|desc">Name Descending</option>
                                     <option value="unitPrice|asc">Price Lowest</option>
                                     <option value="unitPrice|desc">Price Highest</option>
-                                    <option value="totalUnit1Quantity|asc">Stock Lowest</option>
-                                    <option value="totalUnit1Quantity|desc">Stock Highest</option>
+                                    {/* <option value="totalUnit1Quantity|asc">Stock Lowest</option>
+                                    <option value="totalUnit1Quantity|desc">Stock Highest</option> */}
                                 </select>
                             </div>
                         </div>

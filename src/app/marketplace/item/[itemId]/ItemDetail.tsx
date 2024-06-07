@@ -16,7 +16,7 @@ const ItemDetail = ({connection, item, similarItem}: any) => {
     const [submitedItem, setSubmitedItem] = useState(item)
     const [itemId, setItemId] = useState(item.d.id)
     const [itemNo, setItemNo] = useState(item.d.no)
-    const [quantity, setQuantity] = useState(item.d.totalUnit1Quantity)
+    const [quantity, setQuantity] = useState(item.d.availableToSell)
     const [width, setWidth] = useState(item.d.dimWidth)
     const [height, setHeight] = useState(item.d.dimHeight)
     const [depth, setDepth] = useState(item.d.dimDepth)
@@ -41,7 +41,7 @@ const ItemDetail = ({connection, item, similarItem}: any) => {
         setItemNo(key.d.no)
         setNotes(key.d.notes)
         setPrice(key.d.unitPrice)
-        setQuantity(key.d.totalUnit1Quantity)
+        setQuantity(key.d.availableToSell)
     }
 
     // console.log(similarItem)
