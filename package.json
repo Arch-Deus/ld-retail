@@ -27,7 +27,6 @@
     "@types/bcryptjs": "^2.4.6",
     "@types/react": "^18",
     "@types/react-collapse": "^5.0.4",
-    "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
