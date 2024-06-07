@@ -1,113 +1,243 @@
 import Image from "next/image";
+import { Carousel } from "flowbite-react";
+import { MdOutlineChair } from "react-icons/md";
+import { IoLayersOutline } from "react-icons/io5";
+import { FaRegThumbsUp } from "react-icons/fa";
+import { BsTools } from "react-icons/bs";
 
-export default function Home() {
+export default async function Home() {
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <main>
+      <div className="h-56 md:h-[560px]">
+        <Carousel>
+          <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+            <img src="wallpaper_1.jpg" />
+          </div>
+          <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+            <img src="wallpaper_2.jpg" />
+          </div>
+        </Carousel>
+      </div>
+
+
+      <div className="mt-16 mb-[96px]">
+
+        <div className="text-center">
+          <div className="font-semibold text-sm">FURNITURE COLLECTION</div>
+          <div className="mt-2 opacity-[3%] hidden md:block font-bold text-7xl">MARKETPLACE</div>
+          <div className="font-semibold text-2xl md:-mt-[52px]">Recommendation Categories</div>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-10 mt-10 px-20">
+          <div>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src="/rec_1.jpg"
+              width={0}
+              height={0}
+              alt=""
+              className="w-full h-auto"
+              sizes="100vw"
+
             />
-          </a>
+            <div className="text-center mt-3 font-semibold text-xl">Dining Room</div>
+          </div>
+
+          <div>
+            <Image
+              src="/rec_2.jpg"
+              width={0}
+              height={0}
+              alt=""
+              className="w-full h-auto"
+              sizes="100vw"
+
+            />
+            <div className="text-center mt-3 font-semibold text-xl">Working Room</div>
+          </div>
+
+          <div>
+            <Image
+              src="/rec_3.jpg"
+              width={0}
+              height={0}
+              alt=""
+              className="w-full h-auto"
+              sizes="100vw"
+
+            />
+            <div className="text-center mt-3 font-semibold text-xl">Living Room</div>
+          </div>
+
+          <div>
+            <Image
+              src="/rec_4.jpg"
+              width={0}
+              height={0}
+              alt=""
+              className="w-full h-auto"
+              sizes="100vw"
+
+            />
+            <div className="text-center mt-3 font-semibold text-xl">Bed Room</div>
+          </div>
+
+          <div>
+            <Image
+              src="/rec_2.jpg"
+              width={0}
+              height={0}
+              alt=""
+              className="w-full h-auto"
+              sizes="100vw"
+
+            />
+            <div className="text-center mt-3 font-semibold text-xl">Cabinet</div>
+          </div>
+
+          <div>
+            <Image
+              src="/rec_5.jpg"
+              width={0}
+              height={0}
+              alt=""
+              className="w-full h-auto"
+              sizes="100vw"
+
+            />
+            <div className="text-center mt-3 font-semibold text-xl">Decoration</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-2 bg-black text-white pb-10">
+        <div className="">
+          <Image
+            src="/home_1.jpg"
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-full h-auto rounded-md"
+            alt=""
+          />
+        </div>
+
+        <div className="p-10">
+          <div className="font-bold text-2xl md:text-5xl mt-10 ">OUR LOCATION</div>
+          <div className="text-stone-400 text-lg md:text-3xl font-light mt-2">STORE LOCATION</div>
+          <div className="border-b-2 border-b-emerald-600 w-1/12 mt-6"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2">
+
+            <div className="text-wrap py-6 pr-7">
+              <div className="font-bold"><span className="text-emerald-600 mr-2">1.</span>Lifetime Experience Center</div>
+              <div className="text-stone-400 text-sm mt-3">
+                Jl. Pangeran Antasari No.70, RW.8, Cilandak Bar., Kec. Cilandak,
+                Kota Jakarta Selatan,
+                Daerah Khusus Ibukota Jakarta 12430.
+              </div>
+              <div className="mt-6">
+                <span className="border-2 border-stone-400 hover:border-white p-2 cursor-pointer">Visit Us</span>
+              </div>
+            </div>
+            
+            <div className="text-wrap py-6 pr-7">
+              <div className="font-bold"><span className="text-emerald-600 mr-2">2.</span>Lifetime Design Serpong</div>
+              <div className="text-stone-400 text-sm mt-3">
+                Ruko Moscow Square A.10, Jl. Gading Serpong Boulevard, West Pakulonan, Kelapa Dua, Tangerang Banten, 15811.
+              </div>
+              <div className="mt-6">
+                <span className="border-2 border-stone-400 hover:border-white p-2 cursor-pointer">Visit Us</span>
+              </div>
+            </div>
+
+            <div className="text-wrap py-6 pr-7">
+              <div className="font-bold"><span className="text-emerald-600 mr-2">3.</span>Lifetime Design Bandung</div>
+              <div className="text-stone-400 text-sm mt-3">
+                Paskal Hypersquare D2, Jl. Pasirkaliki no. 25-27, Kebon Jeruk, Andir, Bandung City, Jawa Barat, 40181.
+              </div>
+              <div className="mt-6">
+                <span className="border-2 border-stone-400 hover:border-white p-2 cursor-pointer">Visit Us</span>
+              </div>
+            </div>
+
+            <div className="text-wrap py-6 pr-7">
+              <div className="font-bold"><span className="text-emerald-600 mr-2">4.</span>Lifetime Design Jepara</div>
+              <div className="text-stone-400 text-sm mt-3">
+                Jepara, Jawa Tengah, 12345.
+              </div>
+              <div className="mt-6">
+                <span className="border-2 border-stone-400 hover:border-white p-2 cursor-pointer">Visit Us</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="border-b-2 border-b-emerald-600 w-1/12 mt-6"></div>
+
+          <div className="text-stone-400 text-lg md:text-3xl font-light mt-6">COMPANY OFFICE</div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="text-wrap py-6 pr-7">
+              <div className="font-bold"><span className="text-emerald-600 mr-2">1.</span>Haery Building</div>
+              <div className="text-stone-400 text-sm mt-3">
+                Jl. Kemang Sel. Raya No.151, RT.4/RW.4, Cilandak Tim., Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12560.
+              </div>
+              <div className="mt-6">
+                <span className="border-2 border-stone-400 hover:border-white p-2 cursor-pointer">Visit Us</span>
+              </div>
+            </div>
+
+            <div className="text-wrap py-6 pr-7">
+              <div className="font-bold"><span className="text-emerald-600 mr-2">2.</span>Lifetime Design Office Tower</div>
+              <div className="text-stone-400 text-sm mt-3">
+                Jl. Kemang Timur No.25, RT.7/RW.4, Bangka, Kec. Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730.
+              </div>
+              <div className="mt-6">
+                <span className="border-2 border-stone-400 hover:border-white p-2 cursor-pointer">Visit Us</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="bg-[url('/home_1_cropped.png')] bg-cover bg-no-repeat h-[1200px] md:h-[700px]">
+        <div className="text-center mt-10">
+          <div className="font-semibold text-sm">SOMETHING ABOUT US</div>
+          <div className="mt-2 opacity-[3%] hidden md:block font-bold text-7xl">MARKETPLACE</div>
+          <div className="font-semibold text-2xl md:-mt-[52px]">Interesting Facts</div>
+        </div>
+
+        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-10 px-10 md:px-32">
+
+          <div className="text-center items-center">
+            <div className="grid justify-items-center text-7xl"><MdOutlineChair /></div>
+            <div className="font-bold text-lg">MATERIAL</div>
+            <div className="font-light text-gray-700 text-sm mt-3">Our furniture is manufactured with the finest materials that goes hand in hand with elegant details.</div>
+          </div>
+
+          <div className="text-center items-center">
+            <div className="grid justify-items-center text-7xl"><IoLayersOutline /></div>
+            <div className="font-bold text-lg">FINISHING</div>
+            <div className="font-light text-gray-700 text-sm mt-3">We specialized in washed luxury  finish and is available in matte and high gloss textures.</div>
+          </div>
+
+          <div className="text-center items-center">
+            <div className="grid justify-items-center text-7xl"><FaRegThumbsUp /></div>
+            <div className="font-bold text-lg">QUALITY</div>
+            <div className="font-light text-gray-700 text-sm mt-3">We prioritise controlling our quality, and we provide end to end service delivering a complete solution from beginning to end.</div>
+          </div>
+
+          <div className="text-center items-center">
+            <div className="grid justify-items-center text-7xl"><BsTools /></div>
+            <div className="font-bold text-lg">EXCLUSIVE</div>
+            <div className="font-light text-gray-700 text-sm mt-3">Our pieces of furniture are limited. each piece are unique and exclusive, along with with warranty, assisted refurbish and replenishment service & more.</div>
+          </div>
+
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
     </main>
   );
 }
