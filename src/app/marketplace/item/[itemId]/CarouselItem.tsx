@@ -21,7 +21,15 @@ const CarouselItem = ({connection, itemId}: CarouselItemProp) => {
 
     useEffect(() => {
 
-        const fetchGetDetailItem = fetch(process.env.NEXT_PUBLIC_ROOT_URL+"/api/getItemDetail?id="+itemId, {
+        let host = ""
+
+        if(process.env.NODE_ENV == "development"){
+            host = process.env.NEXT_PUBLIC_ROOT_URL as string
+        }else{
+            host = "https://ldfurniture.co.id"
+        }
+
+        const fetchGetDetailItem = fetch(host+"/api/getItemDetail?id="+itemId, {
             method: "GET"
         }).then((res) => res.json()).then(
             (data) => {

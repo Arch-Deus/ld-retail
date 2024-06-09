@@ -20,6 +20,7 @@ export default async function Item ({params, searchParams}: {
     itemId: number, 
   }
 }) {
+  
 
     const fetchGetDetailItem = await fetch(searchParams.host+"/accurate/api/item/detail.do?id="+params.itemId, {
         method: "GET",
