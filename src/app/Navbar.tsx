@@ -93,12 +93,12 @@ const Navbar = async () => {
   return (
     <div className='flex items-center justify-between py-3 md:py-7 px-2 md:px-10'>
         <div className='hidden md:block'>
-            <Image src='/logo-LD-Furniture.png' className='w-full h-auto' priority={true} alt='LD Logo' sizes='15vw' width={0} height={0} />
+            <Image src='/logo-LD-Furniture.png' className='w-full h-auto' priority={true} alt='LD Logo' sizes='30vw' width={0} height={0} />
         </div>
 
         <div className='flex md:hidden relative w-full'>
             <SideBarButton links={navlinks} />
-            <div className='w-full grid justify-items-center'><Image className='w-auto h-7' priority={true} sizes='15vw' src='/Logo-LD_text-only.png' alt='LD Logo' width={0} height={0} /></div>
+            <div className='w-full grid justify-items-center'><Image className='w-auto h-7' priority={true} sizes='30vw' src='/Logo-LD_text-only.png' alt='LD Logo' width={0} height={0} /></div>
         </div>
 
         {cookie ? <SearchForm /> : ""}
