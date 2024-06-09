@@ -82,7 +82,7 @@ const ItemDetail = ({connection, item, similarItem}: any) => {
         <div className='p-5'>
           <div className='font-semibold text-3xl text-wrap break-words'>{item.d.name}</div>
           <div className='text-xl text-wrap break-words'>{itemNo}</div>
-          <div className='grid grid-cols-4 gap-2 mt-5'>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-2 mt-5'>
             {
                 listSimilarItem.length > 0 ?
                     listSimilarItem.map((key: any) => (
