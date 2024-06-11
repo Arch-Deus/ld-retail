@@ -18,7 +18,7 @@ export default async function Home() {
             <img src="slide_2.jpg" />
           </div>
           <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-            <img src="slide_3.jpg" />
+            <img src="slide_3.png" />
           </div>
           <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
             <img src="slide_4.jpg" />
