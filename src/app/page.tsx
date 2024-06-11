@@ -12,10 +12,16 @@ export default async function Home() {
       <div className="h-56 md:h-[560px]">
         <Carousel>
           <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-            <img src="wallpaper_1.jpg" />
+            <img src="slide_1.jpg" />
           </div>
           <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-            <img src="wallpaper_2.jpg" />
+            <img src="slide_2.jpg" />
+          </div>
+          <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+            <img src="slide_3.jpg" />
+          </div>
+          <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+            <img src="slide_4.jpg" />
           </div>
         </Carousel>
       </div>
