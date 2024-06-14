@@ -50,8 +50,8 @@ const Login = async ({searchParams}: {searchParams:  {[code: string]: string}}) 
     // console.log(connection)
 
     const header = headers()
-    // const domain = header.get("x-forwarded-proto")+"://"+header.get("host")
-    const domain = header.get("host")
+    const domain = header.get("x-forwarded-proto")+"://"+header.get("host")
+    // const domain = header.get("host")
 
     const accurateScope = process.env.NEXT_PUBLIC_ACCURATE_SCOPE
     const rootUrl = process.env.NEXT_PUBLIC_ROOT_URL
