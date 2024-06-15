@@ -93,7 +93,7 @@ const Navbar = async () => {
   return (
     <div className='flex items-center justify-between py-3 md:py-7 px-2 md:px-10'>
         <div className='hidden md:block'>
-            <Image src='/logo-LD-Furniture.png' className='w-full h-auto' priority={true} alt='LD Logo' sizes='15vw' width={0} height={0} />
+            <Image src='/logo-LD-Furniture.png' className='w-[200px] h-auto' priority={true} alt='LD Logo' sizes='15vw' width={0} height={0} />
         </div>
 
         <div className='flex md:hidden relative w-full'>
