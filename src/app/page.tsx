@@ -38,7 +38,7 @@ export default async function Home() {
         <div className="grid grid-cols-2 md:grid-cols-6 gap-10 mt-10 px-20">
           <div>
             <Image
-              src="/rec_1.jpg"
+              src="/categories/ACCESSORIES.jpg"
               width={0}
               height={0}
               alt=""
@@ -46,12 +46,12 @@ export default async function Home() {
               sizes="100vw"
 
             />
-            <div className="text-center mt-3 font-semibold text-xl">Dining Room</div>
+            <div className="text-center mt-3 font-semibold text-xl">Accessories</div>
           </div>
 
           <div>
             <Image
-              src="/rec_2.jpg"
+              src="/categories/ALMARI.jpg"
               width={0}
               height={0}
               alt=""
@@ -59,12 +59,12 @@ export default async function Home() {
               sizes="100vw"
 
             />
-            <div className="text-center mt-3 font-semibold text-xl">Working Room</div>
+            <div className="text-center mt-3 font-semibold text-xl">Almari</div>
           </div>
 
           <div>
             <Image
-              src="/rec_3.jpg"
+              src="/categories/BED.jpg"
               width={0}
               height={0}
               alt=""
@@ -72,12 +72,38 @@ export default async function Home() {
               sizes="100vw"
 
             />
-            <div className="text-center mt-3 font-semibold text-xl">Living Room</div>
+            <div className="text-center mt-3 font-semibold text-xl">Bed</div>
+          </div>
+
+          {/* <div>
+            <Image
+              src="/categories/BUFFET.jpg"
+              width={0}
+              height={0}
+              alt=""
+              className="w-full h-auto"
+              sizes="100vw"
+
+            />
+            <div className="text-center mt-3 font-semibold text-xl">Buffet</div>
+          </div> */}
+
+          <div>
+            <Image
+              src="/categories/CHAIR.jpg"
+              width={0}
+              height={0}
+              alt=""
+              className="w-full h-auto"
+              sizes="100vw"
+
+            />
+            <div className="text-center mt-3 font-semibold text-xl">Chair</div>
           </div>
 
           <div>
             <Image
-              src="/rec_4.jpg"
+              src="/categories/FIREPLACE.jpg"
               width={0}
               height={0}
               alt=""
@@ -85,12 +111,12 @@ export default async function Home() {
               sizes="100vw"
 
             />
-            <div className="text-center mt-3 font-semibold text-xl">Bed Room</div>
+            <div className="text-center mt-3 font-semibold text-xl">Fireplace</div>
           </div>
 
           <div>
             <Image
-              src="/rec_2.jpg"
+              src="/categories/SOFA.jpg"
               width={0}
               height={0}
               alt=""
@@ -98,12 +124,12 @@ export default async function Home() {
               sizes="100vw"
 
             />
-            <div className="text-center mt-3 font-semibold text-xl">Cabinet</div>
+            <div className="text-center mt-3 font-semibold text-xl">Sofa</div>
           </div>
 
           <div>
             <Image
-              src="/rec_5.jpg"
+              src="/categories/MEJA.jpg"
               width={0}
               height={0}
               alt=""
@@ -111,7 +137,59 @@ export default async function Home() {
               sizes="100vw"
 
             />
-            <div className="text-center mt-3 font-semibold text-xl">Decoration</div>
+            <div className="text-center mt-3 font-semibold text-xl">Meja</div>
+          </div>
+
+          <div>
+            <Image
+              src="/categories/MIRROR.jpg"
+              width={0}
+              height={0}
+              alt=""
+              className="w-full h-auto"
+              sizes="100vw"
+
+            />
+            <div className="text-center mt-3 font-semibold text-xl">Mirror</div>
+          </div>
+
+          <div>
+            <Image
+              src="/categories/NIGHTSTAND.jpg"
+              width={0}
+              height={0}
+              alt=""
+              className="w-full h-auto"
+              sizes="100vw"
+
+            />
+            <div className="text-center mt-3 font-semibold text-xl">Nightstand</div>
+          </div>
+
+          <div>
+            <Image
+              src="/categories/OTHER.jpg"
+              width={0}
+              height={0}
+              alt=""
+              className="w-full h-auto"
+              sizes="100vw"
+
+            />
+            <div className="text-center mt-3 font-semibold text-xl">Other</div>
+          </div>
+
+          <div>
+            <Image
+              src="/categories/RACK.jpg"
+              width={0}
+              height={0}
+              alt=""
+              className="w-full h-auto"
+              sizes="100vw"
+
+            />
+            <div className="text-center mt-3 font-semibold text-xl">Rack</div>
           </div>
         </div>
 
