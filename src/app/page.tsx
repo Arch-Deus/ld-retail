@@ -4,6 +4,7 @@ import { MdOutlineChair } from "react-icons/md";
 import { IoLayersOutline } from "react-icons/io5";
 import { FaRegThumbsUp } from "react-icons/fa";
 import { BsTools } from "react-icons/bs";
+import Link from "next/link";
 
 export default async function Home() {
 
@@ -37,159 +38,183 @@ export default async function Home() {
 
         <div className="grid grid-cols-2 md:grid-cols-6 gap-10 mt-10 px-20">
           <div>
-            <Image
-              src="/categories/ACCESSORIES.jpg"
-              width={0}
-              height={0}
-              alt=""
-              className="w-full h-auto"
-              sizes="100vw"
+            <Link href="marketplace?keyword=&category=ACCESSORIES&type=&sort=">
+              <Image
+                src="/categories/ACCESSORIES.jpg"
+                width={0}
+                height={0}
+                alt=""
+                className="w-full h-auto"
+                sizes="100vw"
 
-            />
-            <div className="text-center mt-3 font-semibold text-xl">Accessories</div>
+              />
+              <div className="text-center mt-3 font-semibold text-xl">Accessories</div>
+            </Link>
           </div>
 
           <div>
-            <Image
-              src="/categories/ALMARI.jpg"
-              width={0}
-              height={0}
-              alt=""
-              className="w-full h-auto"
-              sizes="100vw"
+            <Link href="marketplace?keyword=&category=ALMARI&type=&sort=">
+              <Image
+                src="/categories/ALMARI.jpg"
+                width={0}
+                height={0}
+                alt=""
+                className="w-full h-auto"
+                sizes="100vw"
 
-            />
-            <div className="text-center mt-3 font-semibold text-xl">Almari</div>
+              />
+              <div className="text-center mt-3 font-semibold text-xl">Almari</div>
+            </Link>
           </div>
 
           <div>
-            <Image
-              src="/categories/BED.jpg"
-              width={0}
-              height={0}
-              alt=""
-              className="w-full h-auto"
-              sizes="100vw"
+            <Link href="marketplace?keyword=&category=BED&type=&sort=">
+              <Image
+                src="/categories/BED.jpg"
+                width={0}
+                height={0}
+                alt=""
+                className="w-full h-auto"
+                sizes="100vw"
 
-            />
-            <div className="text-center mt-3 font-semibold text-xl">Bed</div>
+              />
+              <div className="text-center mt-3 font-semibold text-xl">Bed</div>
+            </Link>
           </div>
 
           {/* <div>
-            <Image
-              src="/categories/BUFFET.jpg"
-              width={0}
-              height={0}
-              alt=""
-              className="w-full h-auto"
-              sizes="100vw"
+            <Link href="marketplace?keyword=&category=BUFFET&type=&sort=">
+              <Image
+                src="/categories/BUFFET.jpg"
+                width={0}
+                height={0}
+                alt=""
+                className="w-full h-auto"
+                sizes="100vw"
 
-            />
-            <div className="text-center mt-3 font-semibold text-xl">Buffet</div>
+              />
+              <div className="text-center mt-3 font-semibold text-xl">Buffet</div>
+            </Link>
           </div> */}
 
           <div>
-            <Image
-              src="/categories/CHAIR.jpg"
-              width={0}
-              height={0}
-              alt=""
-              className="w-full h-auto"
-              sizes="100vw"
+            <Link href="marketplace?keyword=&category=CHAIR&type=&sort=">
+              <Image
+                src="/categories/CHAIR.jpg"
+                width={0}
+                height={0}
+                alt=""
+                className="w-full h-auto"
+                sizes="100vw"
 
-            />
-            <div className="text-center mt-3 font-semibold text-xl">Chair</div>
+              />
+              <div className="text-center mt-3 font-semibold text-xl">Chair</div>
+            </Link>
           </div>
 
           <div>
-            <Image
-              src="/categories/FIREPLACE.jpg"
-              width={0}
-              height={0}
-              alt=""
-              className="w-full h-auto"
-              sizes="100vw"
+            <Link href="marketplace?keyword=&category=FIREPLACE&type=&sort=">
+              <Image
+                src="/categories/FIREPLACE.jpg"
+                width={0}
+                height={0}
+                alt=""
+                className="w-full h-auto"
+                sizes="100vw"
 
-            />
-            <div className="text-center mt-3 font-semibold text-xl">Fireplace</div>
+              />
+              <div className="text-center mt-3 font-semibold text-xl">Fireplace</div>
+            </Link>
           </div>
 
           <div>
-            <Image
-              src="/categories/SOFA.jpg"
-              width={0}
-              height={0}
-              alt=""
-              className="w-full h-auto"
-              sizes="100vw"
+            <Link href="marketplace?keyword=&category=SOFA&type=&sort=">
+              <Image
+                src="/categories/SOFA.jpg"
+                width={0}
+                height={0}
+                alt=""
+                className="w-full h-auto"
+                sizes="100vw"
 
-            />
-            <div className="text-center mt-3 font-semibold text-xl">Sofa</div>
+              />
+              <div className="text-center mt-3 font-semibold text-xl">Sofa</div>
+            </Link>
           </div>
 
           <div>
-            <Image
-              src="/categories/MEJA.jpg"
-              width={0}
-              height={0}
-              alt=""
-              className="w-full h-auto"
-              sizes="100vw"
+            <Link href="marketplace?keyword=&category=MEJA&type=&sort=">
+              <Image
+                src="/categories/MEJA.jpg"
+                width={0}
+                height={0}
+                alt=""
+                className="w-full h-auto"
+                sizes="100vw"
 
-            />
-            <div className="text-center mt-3 font-semibold text-xl">Meja</div>
+              />
+              <div className="text-center mt-3 font-semibold text-xl">Meja</div>
+            </Link>
           </div>
 
           <div>
-            <Image
-              src="/categories/MIRROR.jpg"
-              width={0}
-              height={0}
-              alt=""
-              className="w-full h-auto"
-              sizes="100vw"
+            <Link href="marketplace?keyword=&category=MIRROR&type=&sort=">
+              <Image
+                src="/categories/MIRROR.jpg"
+                width={0}
+                height={0}
+                alt=""
+                className="w-full h-auto"
+                sizes="100vw"
 
-            />
-            <div className="text-center mt-3 font-semibold text-xl">Mirror</div>
+              />
+              <div className="text-center mt-3 font-semibold text-xl">Mirror</div>
+            </Link>
           </div>
 
           <div>
-            <Image
-              src="/categories/NIGHTSTAND.jpg"
-              width={0}
-              height={0}
-              alt=""
-              className="w-full h-auto"
-              sizes="100vw"
+            <Link href="marketplace?keyword=&category=NIGHTSTAND&type=&sort=">
+              <Image
+                src="/categories/NIGHTSTAND.jpg"
+                width={0}
+                height={0}
+                alt=""
+                className="w-full h-auto"
+                sizes="100vw"
 
-            />
-            <div className="text-center mt-3 font-semibold text-xl">Nightstand</div>
+              />
+              <div className="text-center mt-3 font-semibold text-xl">Nightstand</div>
+            </Link>
           </div>
 
           <div>
-            <Image
-              src="/categories/OTHER.jpg"
-              width={0}
-              height={0}
-              alt=""
-              className="w-full h-auto"
-              sizes="100vw"
+            <Link href="marketplace?keyword=&category=OTHER&type=&sort=">
+              <Image
+                src="/categories/OTHER.jpg"
+                width={0}
+                height={0}
+                alt=""
+                className="w-full h-auto"
+                sizes="100vw"
 
-            />
-            <div className="text-center mt-3 font-semibold text-xl">Other</div>
+              />
+              <div className="text-center mt-3 font-semibold text-xl">Other</div>
+            </Link>
           </div>
 
           <div>
-            <Image
-              src="/categories/RACK.jpg"
-              width={0}
-              height={0}
-              alt=""
-              className="w-full h-auto"
-              sizes="100vw"
+            <Link href="marketplace?keyword=&category=RACK&type=&sort=">
+              <Image
+                src="/categories/RACK.jpg"
+                width={0}
+                height={0}
+                alt=""
+                className="w-full h-auto"
+                sizes="100vw"
 
-            />
-            <div className="text-center mt-3 font-semibold text-xl">Rack</div>
+              />
+              <div className="text-center mt-3 font-semibold text-xl">Rack</div>
+            </Link>
           </div>
         </div>
 
