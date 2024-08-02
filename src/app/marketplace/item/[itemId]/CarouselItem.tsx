@@ -46,7 +46,7 @@ const CarouselItem = ({connection, itemId}: CarouselItemProp) => {
         return (
             <div className='mt-5 p-0 md:p-10'>
                 {/* <div>{JSON.stringify(data)}</div> */}
-                <div className="h-56 md:h-[560px]">
+                <div className="h-auto">
                     <Carousel>
                     {
                         data.data.d.detailItemImage.length > 0 ? 
