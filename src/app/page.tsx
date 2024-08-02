@@ -82,10 +82,10 @@ export default async function Home() {
             </Link>
           </div>
 
-          {/* <div>
+          <div>
             <Link href="marketplace?keyword=&category=BUFFET&type=&sort=">
               <Image
-                src="/categories/BUFFET.jpg"
+                src="/categories/buffet.jpg"
                 width={0}
                 height={0}
                 alt=""
@@ -95,7 +95,7 @@ export default async function Home() {
               />
               <div className="text-center mt-3 font-semibold text-xl">Buffet</div>
             </Link>
-          </div> */}
+          </div>
 
           <div>
             <Link href="marketplace?keyword=&category=CHAIR&type=&sort=">

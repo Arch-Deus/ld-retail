@@ -51,7 +51,7 @@ const CarouselItem = ({connection, itemId}: CarouselItemProp) => {
                     {
                         data.data.d.detailItemImage.length > 0 ? 
                         data.data.d.detailItemImage.map((key: any) => (
-                            <Image priority key={key.id} className='w-full h-auto' src={connection.host+key.fileName+"?access_token="+connection.token+"&session="+connection.session} width={0} height={0} alt="" sizes="100vw" />
+                            <Image priority key={key.id} className='w-full h-full' src={connection.host+key.fileName+"?access_token="+connection.token+"&session="+connection.session} width={0} height={0} alt="" sizes="100vw" />
                             // <div>{searchParams.host+key.fileName+"?access_token="+searchParams.token+"&session="+searchParams.session}</div>
                             // <img src={searchParams.host+resultFetchGetDetailItem.d.detailItemImage[0].fileName+"?access_token="+searchParams.token+"&session="+searchParams.session} width={0} height={0} alt="" sizes="100vw" />
                         ))
