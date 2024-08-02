@@ -56,7 +56,7 @@ const CarouselItem = ({connection, itemId}: CarouselItemProp) => {
                             // <img src={searchParams.host+resultFetchGetDetailItem.d.detailItemImage[0].fileName+"?access_token="+searchParams.token+"&session="+searchParams.session} width={0} height={0} alt="" sizes="100vw" />
                         ))
                         :
-                        <Image className='w-full h-auto' src={"/default_item.png"} priority width={0} height={0} alt="" sizes="1000vw" />
+                        <Image className='w-full h-full' src={"/default_item.png"} priority width={0} height={0} alt="" sizes="1000vw" />
                     }
                     </Carousel>
                 </div>
