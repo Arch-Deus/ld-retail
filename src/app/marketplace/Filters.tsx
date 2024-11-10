@@ -73,6 +73,8 @@ const Filters = ({keyword}: filterProp) => {
                                     <option value="" disabled>Select Item Type</option>
                                     <option value="104">FINISHED GOOD - LOOSE FURNITURE</option>
                                     <option value="109">MENTAH-RETAIL</option>
+                                    <option value="800">CABINET TERRA</option>
+                                    <option value="750">RETAIL TERRA</option>
                                 </select>
                             </div>
                         </div>
