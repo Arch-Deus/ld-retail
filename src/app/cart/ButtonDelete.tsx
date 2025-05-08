@@ -12,7 +12,7 @@ const ButtonDelete = ({id}: any) => {
     const router = useRouter()
 
     const deleteItem = async () => {
-        const deletesThis = await fetch(process.env.NEXT_PUBLIC_ROOT_URL+"/api/deleteItemList?id="+id, {
+        const deletesThis = await fetch("/api/deleteItemList?id="+id, {
             method: "DELETE"
         })
 
