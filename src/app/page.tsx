@@ -13,16 +13,17 @@ export default async function Home() {
       <div className="h-56 md:h-[560px]">
         <Carousel>
           <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-            <img src="slide_1.jpg" />
+            {/* <img src="slide_1.jpg" /> */}
+            <Image src={'/slide_1.jpg'} className="w-full h-auto" width={0} height={0} sizes="100vw"  alt="Image 1" />
           </div>
           <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-            <img src="slide_2.jpg" />
+          <Image src={'/slide_2.jpg'} className="w-full h-auto" width={0} height={0} sizes="100vw"  alt="Image 2" />
           </div>
           <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-            <img src="slide_3.png" />
+          <Image src={'/slide_3.png'} className="w-full h-auto" width={0} height={0} sizes="100vw"    alt="Image 3" />
           </div>
           <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-            <img src="slide_4.jpg" />
+          <Image src={'/slide_4.jpg'} className="w-full h-auto" width={0} height={0} sizes="100vw"   alt="Image 4" />
           </div>
         </Carousel>
       </div>
